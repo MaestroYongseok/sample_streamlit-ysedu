@@ -1,5 +1,6 @@
 # -*- coding:UTF-8 -*-
 import streamlit as st
+import pandas as pd
 
 def main():
     st.title("Hello World")
@@ -34,6 +35,14 @@ def main():
     st.help(range)
     st.help(st.title)
 
+    # 데이터 불러오기
+    iris = pd.read_csv('data/iris.csv')
+
+    st.title("IRIS 테이블")
+    st.dataframe(iris, 200,100) # Height, Width
+
+    st.title('table()')
+    st.write(iris)
 
 if __name__ == '__main__':
     main()
