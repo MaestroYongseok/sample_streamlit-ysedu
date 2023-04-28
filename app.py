@@ -7,7 +7,7 @@ from ml_app import run_ml_app
 from stat_app import run_stat_app
 def main():
     st.markdown(html_temp, unsafe_allow_html=True)
-    menu = ['HOME', 'EDA', 'ML', 'About', 'stat']
+    menu = ['HOME', 'EDA', 'ML', 'stat', 'About']
     choice = st.sidebar.selectbox("Menu", menu)
     if choice == 'HOME':
         st.subheader('HOME')
