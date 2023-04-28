@@ -11,7 +11,7 @@ def run_eda_app():
 
     iris = pd.read_csv('data/iris.csv')
     st.markdown('## IRIS 데이터확인')
-    st.write(iris) # print
+    # st.write(iris) # print
 
     # 메뉴 지정
     submenu = st.sidebar.selectbox ('하위메뉴',['기술통계량','그래프분석', '통계분석'])
